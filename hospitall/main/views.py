@@ -7,7 +7,7 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from rest_framework import filters
 from django_filters.rest_framework import DjangoFilterBackend
 def welcome(requset):
-    return JsonResponse("Welcoem to Coin" , safe=False)
+    return JsonResponse("Welcoem to hospitall" , safe=False)
 class Login(TokenObtainPairView):
     pass
 class Logout(TokenRefreshView):

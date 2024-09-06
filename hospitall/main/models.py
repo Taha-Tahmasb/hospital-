@@ -12,6 +12,6 @@ class appointment(models.Model):
     name = models.CharField(max_length=255)
     #date = models.DateField(max_length=255)
     time = models.DateField(max_length=255)
-    service = models.ForeignKey(Service)
+    service = models.ForeignKey(Service , on_delete= models.CASCADE)
     paying_status = models.ForeignKey(Transaction , on_delete= models.CASCADE)
 
